@@ -9,8 +9,6 @@ A basic telnet client to familarize myself with the protocol.
   - [[#building][Building]]
   - [[#installing][Installing]]
 - [[#to-do-list][TO-DO list]]
-  - [[#install-target-in-main][Install target in main]]
-  - [[#make-it-actually-work][Make it actually work]]
 
 * Downloading, building and installing
 ** Downloading
@@ -31,5 +29,5 @@ sudo make install
 
 
 * TO-DO list
-** TODO Install target in main
-** TODO Make it actually work
+- TODO Install target in main
+- TODO Make it actually work
