@@ -3,22 +3,20 @@ CCLIBS=
 CCFLAGS=-Wall -Werror -pedantic
 CSOURCES=src/main.c
 COBJ=$(CSOURCES:src/%.c=build/%.o)
-EXEC=build/ctelnet
+EXEC=build/telnettest
 
-.PHONY all clean mrproper
+.PHONY: all clean mrproper
 
 all: $(EXEC)
 
 clean:
-	rm build/*.o
+	rm -f build/**.o
 
 mrproper: clean
-	rm $(EXEC)
+	rm -f $(EXEC)
 
 $(EXEC): $(COBJ)
-	$(CC) $(CCLIBS) $(CCFLAGS) $^ -o $@
+	$(CC) $(CCFLAGS) $^ -o $@ $(CCLIBS)
 
-build/main.o: src/main.c
-	$(CC) $(CCLIBS) $(CCFLAGS) $< -o $a
-
-
+build/%.o: src/%.c
+	$(CC) $(CCFLAGS) $< -c -o $@ $(CCLIBS)
