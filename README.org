@@ -1,0 +1,35 @@
+#+TITLE: ctelnet
+#+AUTHOR: Annwan
+
+A basic telnet client to familarize myself with the protocol.
+
+* Contents :TOC:
+- [[#downloading-building-and-installing][Downloading, building and installing]]
+  - [[#downloading][Downloading]]
+  - [[#building][Building]]
+  - [[#installing][Installing]]
+- [[#to-do-list][TO-DO list]]
+  - [[#install-target-in-main][Install target in main]]
+  - [[#make-it-actually-work][Make it actually work]]
+
+* Downloading, building and installing
+** Downloading
+#+BEGIN_SRC shell
+git clone https://github.com/Annwan/ctelnet
+cd ctelnet
+#+END_SRC
+
+** Building
+#+BEGIN_SRC shell
+make clean build
+#+END_SRC
+
+** Installing
+#+BEGIN_SRC shell
+sudo make install
+#+END_SRC
+
+
+* TO-DO list
+** TODO Install target in main
+** TODO Make it actually work
